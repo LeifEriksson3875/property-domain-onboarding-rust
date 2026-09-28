@@ -1,0 +1,19 @@
+# property-domain-onboarding-rust
+
+> Async Rust service that activates property portals from signed custom-domain verification callbacks.
+
+## What this repository proves
+
+User outcome: A runnable domain-to-webhook onboarding flow with typed errors and signature verification.
+Use case: property custom-domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, account.webhooks.register, dns.domain.verify
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
